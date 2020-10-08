@@ -1,0 +1,39 @@
+// .header {
+//     background-color: $main-color;
+// }
+.site-nav {
+    max-width: 1408px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-navigation {
+    @include list-reset;
+    display: flex;
+}
+.navigation-item:not(:last-child) > a {
+    margin-right: 32px;
+}
+.navigation-item > a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: $white;
+    &::after {
+        content: attr(title);
+        display: block;
+        font-weight: bold;
+		height: 0;
+		overflow: hidden;
+		visibility: hidden;
+    }
+    &:hover {
+        font-weight: bold;
+    }
+}

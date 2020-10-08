@@ -1,0 +1,36 @@
+@mixin list-reset {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+// @include list-reset;
+
+@mixin playfairReg {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+// @include playfairReg;
+
+@mixin playfairBold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+// @include playfairBold;
+
+@mixin poppinsBold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+// @include poppinsBold;
+
+@mixin robotoLight {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+// @include robotoLight;
+
+@mixin robotoReg {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+// @include robotoReg;
