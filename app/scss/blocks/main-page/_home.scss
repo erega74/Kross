@@ -1,14 +1,26 @@
 .main {
     margin-top: -125px;
+    margin-bottom: 200px;
 }
 .home {
+    position: relative;
     padding-top: 125px;
-    background-image: url(../img/main-page/leaf_header.png),
-                    url(../img/main-page/home_bg.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-size: auto, cover;
-    background-position: left 10% bottom -30px, 0 0;
+    background-image: url(../img/main-page/home_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
     background-color: $main-color;
+    &::after {
+        content: "";
+        width: 169px;
+        height: 96px;
+        position: absolute;
+        bottom: -8%;
+        left: 8%;
+        z-index: 10;
+        background-image: url(../img/main-page/leaf_header.png);
+        background-repeat: no-repeat;
+    }
 }
 .home-list {
     @include list-reset;
@@ -20,6 +32,8 @@
     padding-right: 15px;
     display: flex;
     justify-content: space-between;
+    z-index: 20;
+    position: relative;
 }
 .home-list__item > h2 {
     @include poppinsBold;

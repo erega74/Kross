@@ -34,3 +34,10 @@
     font-weight: 400;
 }
 // @include robotoReg;
+
+@mixin blocks-title {
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+// @include blocks-title;

@@ -420,6 +420,11 @@ body {
   overflow: hidden;
 }
 
+.header {
+  z-index: 100;
+  position: relative;
+}
+
 .site-nav {
   max-width: 1408px;
   margin: 0 auto;
@@ -474,15 +479,29 @@ body {
 
 .main {
   margin-top: -125px;
+  margin-bottom: 200px;
 }
 
 .home {
+  position: relative;
   padding-top: 125px;
-  background-image: url(../img/main-page/leaf_header.png), url(../img/main-page/home_bg.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, cover;
-  background-position: left 10% bottom -30px, 0 0;
+  background-image: url(../img/main-page/home_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
   background-color: #41228e;
+}
+
+.home::after {
+  content: "";
+  width: 169px;
+  height: 96px;
+  position: absolute;
+  bottom: -8%;
+  left: 8%;
+  z-index: 10;
+  background-image: url(../img/main-page/leaf_header.png);
+  background-repeat: no-repeat;
 }
 
 .home-list {
@@ -502,6 +521,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 20;
+  position: relative;
 }
 
 .home-list__item > h2 {
@@ -550,4 +571,226 @@ body {
   background-image: url(../img/socials-icons.svg);
   background-repeat: no-repeat;
   background-position: 0 -57px;
+}
+
+.skills {
+  padding-top: 72px;
+}
+
+.skills-leading-paragraph {
+  font-size: 22px;
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+  line-height: 36px;
+  margin-bottom: 39px;
+}
+
+.skills-more-link {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #41228e;
+}
+
+.skills-title {
+  margin-top: 141px;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills-list__item {
+  margin: 15px;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(224, 241, 255, 0.34) 0 59px 46px;
+          box-shadow: rgba(224, 241, 255, 0.34) 0 59px 46px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.skills-list__item:hover {
+  -webkit-box-shadow: rgba(224, 241, 255, 0.64) 0 39px 56px;
+          box-shadow: rgba(224, 241, 255, 0.64) 0 39px 56px;
+}
+
+.skills__card-caption {
+  margin-top: 22px;
+  margin-bottom: 26px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.experience-title {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.experience-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.experience-list__item {
+  padding-top: 120px;
+  text-align: center;
+  margin: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.experience-list__item:nth-child(1) {
+  background-image: url(../img/main-page/webex.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.experience-list__item:nth-child(2) {
+  background-image: url(../img/main-page/augmedix.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.experience-list__item:nth-child(3) {
+  background-image: url(../img/main-page/themefisher.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.experience__item-title {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.experience__item-title {
+  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin-top: 12px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.experience__item-time {
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.experience__item-position {
+  font-size: 22px;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.education {
+  background-image: url(../img/main-page/education_bg_top.svg), url(../img/main-page/edu-gradient-bg.svg), url(../img/main-page/dots_bg.svg);
+  background-repeat: no-repeat, repeat-x, repeat;
+  background-size: 100%, auto,  auto;
+  background-position: 100% 0, 100% bottom, 0 0;
+  padding-top: 150px;
+  padding-bottom: 140px;
+}
+
+.education-title {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.education-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.education-list__item {
+  padding-left: 174px;
+  margin-bottom: 50px;
+  -ms-flex-preferred-size: 490px;
+      flex-basis: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../img/main-page/edu-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -16px;
+}
+
+.education__item-title {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.education__item-year {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.education__item-specialty {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 22px;
 }

@@ -1,0 +1,52 @@
+.experience-title {
+    @include blocks-title;
+}
+.experience-list {
+    @include list-reset;
+    display: flex;
+    justify-content: space-around;
+    &__item {
+        padding-top: 120px;
+        text-align: center;
+        margin: 39px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+.experience-list__item:nth-child(1) {
+    background-image: url(../img/main-page/webex.svg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.experience-list__item:nth-child(2) {
+    background-image: url(../img/main-page/augmedix.svg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.experience-list__item:nth-child(3) {
+    background-image: url(../img/main-page/themefisher.svg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.experience__item-title {
+    order: 1;
+}
+.experience__item-title {
+    font-size: 22px;
+    @include playfairReg;
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: rgba(black, .4);
+}
+.experience__item-time {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    @include robotoReg;
+}
+.experience__item-position {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}

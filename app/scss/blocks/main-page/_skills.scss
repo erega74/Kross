@@ -1,0 +1,46 @@
+.skills {
+    padding-top: 72px;
+}
+.skills-leading-paragraph {
+    font-size: 22px;
+    text-align: center;
+    max-width: 980px;
+    margin: 0 auto;
+    line-height: 36px;
+    margin-bottom: 39px;
+}
+.skills-more-link {
+    @include playfairBold;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $main-color;
+}
+.skills-title {
+    margin-top: 141px;
+    @include blocks-title;
+}
+.skills-list {
+    @include list-reset;
+    display: flex;
+    &__item {
+        margin: 15px;
+        border-radius: 7px;
+        overflow: hidden;
+        background-color: $white;
+        box-shadow: rgba($dropshadow, .34) 0 59px 46px;
+        transition: .3s ease;
+        &:hover {
+            box-shadow: rgba($dropshadow, .64) 0 39px 56px;
+        }
+    }
+}
+.skills__card-caption {
+    margin-top: 22px;
+    margin-bottom: 26px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 22px;
+}
