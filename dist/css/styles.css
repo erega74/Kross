@@ -890,3 +890,73 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+
+.portfolio-title {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 71px;
+}
+
+.portfolio-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-img__big {
+  width: 370px;
+  height: 584px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.portfolio-img__big > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.small-image-wrap {
+  width: 370px;
+  overflow: hidden;
+  height: 280px;
+  border-radius: 8px;
+  position: relative;
+  margin: 12px 15px;
+}
+
+.small-image-wrap > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.portfolio-four-img {
+  width: auto;
+}
+
+.two-first-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.two-last-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

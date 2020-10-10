@@ -33,9 +33,14 @@ body {
     overflow: hidden;
 }
 
+//////////////////////// НАЧАЛО блоки главной страницы ////////////////////////////
+
 @import "blocks/main-page/header";
 @import "blocks/main-page/home";
 @import "blocks/main-page/skills";
 @import "blocks/main-page/experience";
 @import "blocks/main-page/education";
 @import "blocks/main-page/services";
+@import "blocks/main-page/portfolio";
+
+//////////////////////// КОНЕЦ блоки главной страницы ////////////////////////////
