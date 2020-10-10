@@ -1,0 +1,74 @@
+.services {
+    margin-top: -80px;
+}
+.services-title {
+    @include blocks-title;
+    margin-bottom: 75px;
+}
+.services-list {
+    @include list-reset;
+    display: flex;
+    &__item {
+        padding-top: 170px;
+        position: relative;
+        text-align: center;
+        transition: .3s ease;
+        margin: 9px;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 57px;
+        border-radius: 4px;
+        &::before {
+            content: "";
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 50%;
+            top: 84px;
+            transform: translateX(-50%);
+            background-image: url(../img/main-page/services-sprite.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+        &:hover::before {
+            background-position: 0 -60px;
+        }
+        &:hover {
+            background-color: $main-color;
+            > .services__item-title {
+                color: white;
+            }
+            > .services__item-desc {
+                color: rgba(white, .7);
+            }
+        }
+    }
+    &__item:nth-child(2){
+        &::before {
+            background-position: -120px 0;
+        }
+        &:hover::before{
+            background-position: -120px -60px;
+        }
+            
+    }
+    &__item:nth-child(3){
+        &::before {
+            background-position: -60px 0;
+        }
+        &:hover::before{
+            background-position: -60px -60px;
+        }
+    }
+}
+.services__item-title {
+    @include playfairReg;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.services__item-desc {
+    line-height: 28px;
+    font-size: 15px;
+    color: rgba(black, .7);
+    @include robotoReg;
+}
