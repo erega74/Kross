@@ -1,0 +1,105 @@
+.blogs-title {
+    @include blocks-title;
+}
+.blogs-list {
+    @include list-reset;
+    display: flex;
+    &__item {
+        line-height: 0;
+        margin: 17px;
+    }
+}
+.post {
+    box-shadow: rgba($dropshadow, .34) 0 59px 46px;
+    transition: .3s ease;
+    &:hover {
+        box-shadow: rgba($dropshadow, .64) 0 39px 56px;
+    }
+}
+.post-title {
+    @include playfairReg;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 9px;
+}
+.post-text {
+    @include robotoReg;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(black,.7);
+}
+.big-post > .post-image-wrap {
+    width: 402px;
+    max-height: 502px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: hidden;
+}
+
+.big-post {
+    display: flex;
+    align-items: flex-end;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    > .post-text-content {
+        max-width: 363px;
+        padding-left: 42px;
+        padding-right: 42px;
+        padding-bottom: 71px;
+        > .post-title {
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+        > .post-text {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+    }
+}
+.small-post > .post-image-wrap {
+    max-width: 370px;
+    height: 270px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.small-post {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 370px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    > .post-text-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 26px;
+        padding-bottom: 23px;
+        > .post-title {
+            line-height: 36px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        > .post-text {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.post-tag {
+    // display: block;
+    font-size: 15px;
+    padding: 2px 12px;
+    line-height: 36px;
+    text-decoration: none;
+    color: $main-color;
+    // margin-bottom: 5px;
+}
+.ecommerce {
+    background-color:rgba($main-color, .12);
+    border-radius: 4px;
+}
+.creative {
+    background-color:rgba($orange, .12);
+    border-radius: 4px;
+}
