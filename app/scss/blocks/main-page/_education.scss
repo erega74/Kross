@@ -8,6 +8,7 @@
 }
 .education-title {
     @include blocks-title;
+    margin-bottom: 91px;
 }
 .education-list {
     @include list-reset;
@@ -17,7 +18,7 @@
     justify-content: space-around;
     &__item {
         padding-left: 174px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
         flex-basis: 490px;
         display: flex;
         align-items: flex-start;

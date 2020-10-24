@@ -1,5 +1,6 @@
 .skills {
     padding-top: 72px;
+    padding-bottom: 95px;
 }
 .skills-leading-paragraph {
     font-size: 22px;
@@ -21,6 +22,7 @@
 .skills-title {
     margin-top: 141px;
     @include blocks-title;
+    margin-bottom: 70px;
 }
 .skills-list {
     @include list-reset;

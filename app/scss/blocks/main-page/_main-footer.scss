@@ -1,0 +1,41 @@
+.main-footer {
+    margin-top: -180px;
+    background-color: $footer-bg;
+    z-index: 50;
+    padding-top: 226px;
+}
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+    @include list-reset;
+}
+.contact-list__item > h3 {
+    @include playfairReg;
+    font-size: 18px;
+    color: rgba(white, .4);
+    margin-bottom: 15px;
+}
+.footer-email,
+.footer-phone {
+    font-size: 22px;
+    color: white;
+    line-height: 32px;
+    text-decoration: none;
+}
+.footer-address {
+    font-size: 22px;
+    color: white;
+    line-height: 32px;
+}
+.footer-copyright {
+    margin-top: 30px;
+    border-top: 1px solid rgba(white, .09);
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+.copyright {
+    @include robotoReg;
+    font-size: 15px;
+    color: rgba(white, .7);
+    text-align: center;
+}

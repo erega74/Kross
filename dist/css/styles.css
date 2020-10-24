@@ -479,7 +479,6 @@ body {
 
 .main {
   margin-top: -125px;
-  margin-bottom: 200px;
 }
 
 .home {
@@ -575,6 +574,7 @@ body {
 
 .skills {
   padding-top: 72px;
+  padding-bottom: 95px;
 }
 
 .skills-leading-paragraph {
@@ -602,6 +602,7 @@ body {
   font-size: 60px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  margin-bottom: 70px;
 }
 
 .skills-list {
@@ -638,10 +639,15 @@ body {
   line-height: 22px;
 }
 
+.experience {
+  margin-bottom: -40px;
+}
+
 .experience-title {
   font-size: 60px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  margin-bottom: 26px;
 }
 
 .experience-list {
@@ -730,6 +736,7 @@ body {
   font-size: 60px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  margin-bottom: 91px;
 }
 
 .education-list {
@@ -750,7 +757,7 @@ body {
 
 .education-list__item {
   padding-left: 174px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   -ms-flex-preferred-size: 490px;
       flex-basis: 490px;
   display: -webkit-box;
@@ -797,13 +804,14 @@ body {
 
 .services {
   margin-top: -80px;
+  padding-bottom: 111px;
 }
 
 .services-title {
   font-size: 60px;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 77px;
 }
 
 .services-list {
@@ -1056,7 +1064,7 @@ body {
 
 .companys {
   padding-top: 135px;
-  padding-bottom: 135px;
+  padding-bottom: 35px;
 }
 
 .companys-list {
@@ -1082,6 +1090,10 @@ body {
   margin-left: 42px;
   margin-right: 42px;
   margin-bottom: 42px;
+}
+
+.blogs {
+  padding-bottom: 114px;
 }
 
 .blogs-title {
@@ -1226,13 +1238,17 @@ body {
 }
 
 .contact-info {
+  padding-top: 50px;
   background-image: url(../img/main-page/dots_bg.svg);
+  position: relative;
 }
 
 .contact-info-title {
   font-size: 60px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 100px;
 }
 
 .contact-form {
@@ -1243,8 +1259,9 @@ body {
   padding-bottom: 40px;
   margin: 0 auto;
   border-radius: 6px;
-  -webkit-box-shadow: 0 15px 95px rgba(224, 241, 255, 0.42);
-          box-shadow: 0 15px 95px rgba(224, 241, 255, 0.42);
+  -webkit-box-shadow: 0 15px 95px rgba(224, 241, 255, 0.22);
+          box-shadow: 0 15px 95px rgba(224, 241, 255, 0.22);
+  z-index: 100;
 }
 
 .user-data {
@@ -1352,4 +1369,60 @@ textarea::placeholder {
   border: 2px solid #41228e;
   background-color: #fff;
   color: #41228e;
+}
+
+.main-footer {
+  margin-top: -180px;
+  background-color: #222222;
+  z-index: 50;
+  padding-top: 226px;
+}
+
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list__item > h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 15px;
+}
+
+.footer-email,
+.footer-phone {
+  font-size: 22px;
+  color: white;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.footer-address {
+  font-size: 22px;
+  color: white;
+  line-height: 32px;
+}
+
+.footer-copyright {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  padding-top: 43px;
+  padding-bottom: 43px;
+}
+
+.copyright {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }

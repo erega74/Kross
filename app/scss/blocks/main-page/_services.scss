@@ -1,9 +1,10 @@
 .services {
     margin-top: -80px;
+    padding-bottom: 111px;
 }
 .services-title {
     @include blocks-title;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
 }
 .services-list {
     @include list-reset;

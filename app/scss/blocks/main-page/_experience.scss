@@ -1,5 +1,9 @@
+.experience {
+    margin-bottom: -40px;
+}
 .experience-title {
     @include blocks-title;
+    margin-bottom: 26px;
 }
 .experience-list {
     @include list-reset;
