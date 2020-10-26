@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kross</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
@@ -34,9 +35,18 @@
     </header>
     <main class="main">
         <section class="home">
-            <div class="home-slider-wrap">
-                <ul class="home-list">
-                    <li class="home-list__item">
+            <div class="swiper-container home-slider-wrap">
+                <ul class="swiper-wrapper home-list">
+                    <li class="swiper-slide home-list__item">
+                        <h2>Hi! I'm Christoher UX designer</h2>
+                    </li>
+                    <li class="swiper-slide home-list__item">
+                        <h2>Hi! I'm Christoher UX designer</h2>
+                    </li>
+                    <li class="swiper-slide home-list__item">
+                        <h2>Hi! I'm Christoher UX designer</h2>
+                    </li>
+                    <li class="swiper-slide home-list__item">
                         <h2>Hi! I'm Christoher UX designer</h2>
                     </li>
                 </ul>
@@ -184,17 +194,44 @@
         </section>
         <section class="testimonials">
             <h2 class="testimonials-title">Testimonials</h2>
-            <div class="testimonials-slider">
-                <blockquote class="testimonials-blockquote">
-                    <p class="testimonials-review">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <img src="img/main-page/review-author.jpg" width="106" height="106" alt="">
-                    <cite class="testimonials-review-author">Jesica Gomez</cite>
-                    <p class="testimonials-author-position">CEO, Funder</p>
-                </blockquote>
+            <div class="swiper-container testimonials-slider-container">
+                <ul class="swiper-wrapper testimonials-slider">
+                    <li class="swiper-slide">
+                        <blockquote class="testimonials-blockquote">
+                            <p class="testimonials-review">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <img src="img/main-page/review-author.jpg" width="106" height="106" alt="">
+                            <cite class="testimonials-review-author">Jesica Gomez</cite>
+                            <p class="testimonials-author-position">CEO, Funder</p>
+                        </blockquote>
+                    </li>
+                    <li class="swiper-slide">
+                        <blockquote class="testimonials-blockquote">
+                            <p class="testimonials-review">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <img src="img/main-page/review-author.jpg" width="106" height="106" alt="">
+                            <cite class="testimonials-review-author">Jesica Gomez</cite>
+                            <p class="testimonials-author-position">CEO, Funder</p>
+                        </blockquote>
+                    </li>
+                    
+                    <li class="swiper-slide">
+                        <blockquote class="testimonials-blockquote">
+                            <p class="testimonials-review">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <img src="img/main-page/review-author.jpg" width="106" height="106" alt="">
+                            <cite class="testimonials-review-author">Jesica Gomez</cite>
+                            <p class="testimonials-author-position">CEO, Funder</p>
+                        </blockquote>
+                    </li>
+                </ul>
             </div>
-            <div class="testimonials-slider-pagination"></div>
+            <div class="testimonials-slider-pagination">
+                <div class="slider-pagination"></div>
+            </div>
         </section>
         <section class="companys">
             <div class="container">
@@ -302,6 +339,7 @@
         </div>
     </footer>
     
+    <script src="js/swiper.min.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 </html>

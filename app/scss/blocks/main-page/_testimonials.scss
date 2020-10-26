@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 54px;
-    padding-bottom: 50px;
+    padding-bottom: 76px;
     position: relative;
     &::before {
         content: "";
@@ -71,4 +71,28 @@
     margin-top: 8px;
     color: rgba(white, .4);
     font-size: 18px;
+}
+.testimonials-slider {
+    @include list-reset;
+}
+.testimonials-slider-pagination {
+    margin-top: 2px;
+    text-align: center;
+}
+.slider-pagination > .swiper-pagination-bullet {
+    width: 11px;
+    height: 6px;
+    background-color: white;
+    border-radius: 4px;
+    opacity: .37;
+    transition: .3s;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.slider-pagination > .swiper-pagination-bullet-active {
+    width: 25px;
+    height: 6px;
+    background-color: white;
+    border-radius: 4px;
+    opacity: 1;
 }

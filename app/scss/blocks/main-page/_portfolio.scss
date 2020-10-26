@@ -10,12 +10,13 @@
     align-items: center;
 }
 .portfolio-img__big {
+    flex-shrink: 0;
     width: 370px;
     height: 584px;
     overflow: hidden;
     position: relative;
     border-radius: 8px;
-    margin: 15px;
+    margin: 10px;
     > img {
         display: block;
         position: absolute;
@@ -25,12 +26,13 @@
     }
 }
 .small-image-wrap {
+    flex-shrink: 0;
     width: 370px;
     overflow: hidden;
     height: 280px;
     border-radius: 8px;
     position: relative;
-    margin: 12px 15px;
+    margin: 12px 10px;
     > img {
         display: block;
         position: absolute;
@@ -40,10 +42,12 @@
     }
 }
 .portfolio-four-img {
-    width: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .two-first-images {
     display: flex;
+    flex-wrap: wrap;
 }
 .two-last-images {
     display: flex;

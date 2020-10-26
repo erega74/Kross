@@ -23,12 +23,15 @@
 }
 .home-list {
     @include list-reset;
+    max-width: 1408px;
+    margin: 0 auto;
 }
 .home-socials-and-pagination {
     max-width: 1408px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 35px;
     display: flex;
     justify-content: space-between;
     z-index: 20;
@@ -36,7 +39,7 @@
 }
 .home-list__item > h2 {
     @include poppinsBold;
-    margin-left: 18%;
+    padding-left: 200px;
     color: $white;
     font-size: 80px;
     line-height: 97px;
@@ -50,6 +53,8 @@
     display: block;
     height: 18px;
     width: 18px;
+}
+.socials-item:not(:last-of-type) > a {
     margin-bottom: 24px;
 }
 .socials-facebook {
@@ -72,3 +77,28 @@
     background-repeat: no-repeat;
     background-position: 0 -57px;
 }
+.home-list__pagination {
+    align-self: flex-end;
+    > .swiper-pagination {
+        position: static;
+        display: flex;
+        align-items: baseline;
+        line-height: 0;
+        > .swiper-pagination-bullet {
+            background: none;
+            font-size: 18px;
+            @include playfairBold;
+            color: white;
+            opacity: 1;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        > .swiper-pagination-bullet-active {
+            font-size: 60px;
+            margin-right: 20px;
+            @include playfairBold;
+            color: white;
+        }
+    }
+}
+
