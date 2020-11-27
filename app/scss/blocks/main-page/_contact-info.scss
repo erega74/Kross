@@ -47,6 +47,9 @@ textarea::placeholder {
     border: none;
     border-bottom: 1px solid rgba(black, .22);
 }
+#user-email{
+    margin-left: 10px;
+}
 #user-message-input {
     border: none;
     border-bottom: 1px solid rgba(black, .22);
@@ -57,9 +60,10 @@ textarea::placeholder {
 .user-message {
     margin-bottom: 39px;
 }
+.submit-btn-wrap {
+    text-align: center;
+}
 .send-form-btn {
-    margin-left: 50%;
-    transform: translateX(-50%);
     border: 2px solid transparent;
     background-color: $main-color;
     color: white;

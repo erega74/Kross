@@ -34,6 +34,8 @@
 .testimonials-blockquote {
     max-width: 1000px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
     &::before {
         content: "";

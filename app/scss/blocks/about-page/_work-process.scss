@@ -1,0 +1,39 @@
+.work-process {
+    margin-bottom: 120px;
+}
+.work-process__title {
+    @include blocks-title;
+    margin-bottom: 80px;
+}
+.work-process__list {
+    @include list-reset;
+    display: flex;
+    justify-content: space-between;
+}
+.work-process__item {
+    margin: 40px;
+    padding-top: 64px;
+    text-align: center;
+    max-width: 282px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    &-title {
+        font-size: 22px;
+        @include playfairReg;
+    }
+    &-desc {
+        @include robotoReg;
+        font-size: 15px;
+        line-height: 28px;
+        color: rgba(black, .7);
+    }
+    &--research {
+        background-image: url(../img/about-page/research-ic.svg);
+    }
+    &--design {
+        background-image: url(../img/about-page/design-ic.svg);
+    }
+    &--deliver {
+        background-image: url(../img/about-page/deliver-ic.svg);
+    }
+}

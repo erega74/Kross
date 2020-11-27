@@ -37,7 +37,7 @@ img {
     overflow: hidden;
 }
 
-//////////////////////// НАЧАЛО блоки главной страницы ////////////////////////////
+//////////////////////// НАЧАЛО: блоки главной страницы ////////////////////////////
 
 @import "blocks/main-page/header";
 @import "blocks/main-page/home";
@@ -52,16 +52,28 @@ img {
 @import "blocks/main-page/contact-info";
 @import "blocks/main-page/main-footer";
 
-//////////////////////// КОНЕЦ блоки главной страницы ////////////////////////////
+
+//////////////////////// КОНЕЦ: блоки главной страницы //////////////////////////
 
 //******************************************************************
 
-//////////////////////// НАЧАЛО адаптаций ////////////////////////////
+//////////////////////// НАЧАЛО: блоки страницы about////////////////////////////
+
+@import "blocks/about-page/about";
+@import "blocks/about-page/work-process";
+@import "blocks/about-page/my-team";
+@import "blocks/about-page/companys";
+
+//////////////////////// КОНЕЦ: блоки страницы about////////////////////////////
+
+//******************************************************************
+
+//////////////////////// НАЧАЛО: адаптаций ////////////////////////////
 
 @media(max-width: 1200px) {
     .portfolio-images {
         justify-content: center;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .two-first-images {
         flex-direction: column;
@@ -80,11 +92,257 @@ img {
     .small-image-wrap {
         margin: 12px 10px;
     }
+    .big-post {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 370px;
+        > .post-text-content {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 26px;
+            padding-bottom: 23px;
+            > .post-title {
+                line-height: 36px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            > .post-text {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .blogs-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .big-post > .post-image-wrap {
+        max-width: 370px;
+        height: 270px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .team__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team__item:not(:last-of-type) {
+        margin-right: 15px;
+    }
+    .team__item {
+        margin: 15px;
+    }
+    .about__title {
+        font-size: 70px;
+    }
 }
 @media(max-width: 830px) {
+    .burger__btn {
+        display: block;
+    }
+    .site-navigation-mobile {
+        display: none;
+        z-index: 200;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: $nav-bg;
+        animation-delay: .2s;
+        transition: .3s;
+    }
+    .site-navigation-mobile--active {
+        display: flex;
+        transition: .3s;
+        z-index: 300;
+    }
+    .close-button__wrap,
+    .close-button {
+        display: block;
+    }
+    .navigation-item:not(:last-child) > a {
+        margin: 0;
+    }
+    .navigation-item:first-child {
+        margin-top: 50px;
+    }
+    .navigation-item {
+        margin-top: 30px;
+    }
+    .home-socials {
+        margin-top: 70px;
+    }
+    .socials-item:not(:last-of-type)>a {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+    .navigation-item > .home-socials {
+        display: flex;
+    }
+    .home-socials-and-pagination > .home-socials {
+        display: none;
+    }
+    .home::after {
+        left: auto;
+        right: 8%;
+    }
+    .home-list__item > h2 {
+        padding-left: 100px;
+        font-size: 65px;
+        line-height: 75px;
+    }
     .two-last-images {
         flex-wrap: wrap;
     }
+    .skills-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .experience-list {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .services-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        &__item{
+            max-width: 372px;
+        }
+    }
+    .team__item {
+        max-width: 340px;
+    }
+    .team__photo-wrap {
+        width: 340px;
+    }
+    .about-right-content > .image-wrap {
+        max-width: 360px;
+        max-height: 460px;
+    }
+}
+@media(max-width: 768px) {
+    .home::after {
+        background-size: auto 68px;
+        background-position: right;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .home-list__item > h2 {
+        padding-left: 50px;
+        font-size: 55px;
+        line-height: 65px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .contact-form {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .user-data {
+        flex-direction: column;
+    }
+    #user-name {
+        margin-bottom: 20px;
+    }
+    #user-email{
+        margin-left: 0;
+    }
+    .send-form-btn {
+        padding: 17px 80px;
+    }
+    .contact-list {
+        flex-direction: column;
+        &__item {
+            margin-bottom: 20px;
+        }
+    }
+    .work-process__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about__title {
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+}
+@media(max-width: 425px) {
+    .home-list__item > h2 {
+        padding-left: 15px;
+        font-size: 50px;
+        line-height: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .skills-leading-paragraph {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .portfolio-img__big {
+        width: 290px;
+        height: 458px;
+        > img {
+            width: 400px;
+        }
+    }
+    .small-image-wrap {
+        width: 290px;
+        height: 219px;
+        > img {
+            width: 320px;
+        }
+    }
+    .portfolio-four-img {
+        justify-content: center;
+    }
+    .two-last-images {
+        justify-content: center;
+    }
+    .title {
+        font-size: 40px;
+    }
+    .testimonials-review {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .big-post > .post-image-wrap,
+    .small-post > .post-image-wrap {
+        max-width: 290px;
+        height: 212px;
+    }
+    .big-post > .post-text-content {
+        max-width: 290px;
+    }
+    .small-post > .post-text-content {
+        max-width: 290px;
+    }
+    .contact-form {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #user-email, #user-name {
+        min-width: 100%;
+    }
+    .about-right-content > .image-wrap {
+        max-width: 290px;
+        max-height: 390px;
+    }
+    .team__item {
+        width: 100%;
+    }
+    .team__photo-wrap {
+        max-width: 100%;
+    }
+    .section-margin {
+        margin-bottom: 60px;
+    }
 }
 
-//////////////////////// КОНЕЦ адаптаций ////////////////////////////
+//////////////////////// КОНЕЦ: адаптаций ////////////////////////////

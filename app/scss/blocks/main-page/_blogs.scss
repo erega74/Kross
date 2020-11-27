@@ -33,10 +33,17 @@
 }
 .big-post > .post-image-wrap {
     width: 402px;
-    max-height: 502px;
+    height: 502px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     overflow: hidden;
+    position: relative;
+     img {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
 
 .big-post {
@@ -60,10 +67,17 @@
     }
 }
 .small-post > .post-image-wrap {
-    max-width: 370px;
+    width: 370px;
     height: 270px;
     border-radius: 6px;
     overflow: hidden;
+    position: relative;
+     img {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
 
 .small-post {
