@@ -68,6 +68,14 @@ img {
 
 //******************************************************************
 
+//////////////////////// НАЧАЛО: блоки страницы portfolio ////////////////////////////
+
+@import "blocks/portfolio-page/portfolio-main";
+
+//////////////////////// КОНЕЦ: блоки страницы portfolio ////////////////////////////
+
+//******************************************************************
+
 //////////////////////// НАЧАЛО: адаптаций ////////////////////////////
 
 @media(max-width: 1200px) {
@@ -134,6 +142,11 @@ img {
     }
     .about__title {
         font-size: 70px;
+    }
+    .portfolio__list {
+        max-width: 780px;
+        margin: 0 auto;
+        // columns: 2;
     }
 }
 @media(max-width: 830px) {
@@ -222,6 +235,12 @@ img {
         max-width: 360px;
         max-height: 460px;
     }
+    // .portfolio__list {
+    //     max-width: 300px;
+    //     margin: 0 auto;
+    //     // columns: 1;
+    // }
+    
 }
 @media(max-width: 768px) {
     .home::after {
@@ -271,6 +290,9 @@ img {
     .about__title {
         margin-top: 70px;
         margin-bottom: 100px;
+    }
+    .portfolio__list {
+        max-width: 370px;
     }
 }
 @media(max-width: 425px) {
@@ -342,6 +364,13 @@ img {
     }
     .section-margin {
         margin-bottom: 60px;
+    }
+    .grid-sizer,
+    .grid-item {
+        max-width: 310px;
+    }
+    .portfolio__list {
+        max-width: 310px;
     }
 }
 

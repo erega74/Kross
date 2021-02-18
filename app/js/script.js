@@ -77,6 +77,47 @@ closeNavBtn.addEventListener("click", closeNav);
 
 
 
+try {
+  var portfolioSortButtons = document.querySelectorAll(".sort-button");
+  var elem = document.querySelector('.grid');
+  var iso = new Isotope( elem, {
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'masonry'
+  });
+  
+  // for(var i = 0; i < portfolioSortButtons.length; i++){
+  //   portfolioSortButtons[i].addEventListener("click", function(e){
+  //     var eventBtn = e.currentTarget;
+  //     portfolioSortButtons[i].classList.remove("sort-button--active");
+  //     eventBtn.classList.add("sort-button--active");
+  //     var btnTarget = e.currentTarget.dataset.filter;
+  //     iso.arrange({filter:btnTarget})
+  //   })
+  // }
+  portfolioSortButtons.forEach(function(item){
+    
+    item.addEventListener("click", function(event) {
+      for(var i = 0; i < portfolioSortButtons.length; i++){
+        portfolioSortButtons[i].classList.remove("sort-button--active");
+      }
+      var eventBtn = event.currentTarget;
+      eventBtn.classList.add("sort-button--active");
+      var btnTarget = event.currentTarget.dataset.filter;
+      iso.arrange({filter:btnTarget})
+    })
+  })
+    
+  //   item.addEventListener("click", function(event) {
+  //     item.classList.remove("sort-button--active")
+  //     var targetBtn = event.target
+  //     targetBtn.classList.add("sort-button--active")
+  //   })
+  // })
 
 
+ 
+} catch (error) {
+  
+}
 

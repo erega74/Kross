@@ -1,0 +1,100 @@
+.portfolio__title-wrap {
+  background-image: url(../img/portfolio-page/portfolio-top-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  position: relative;
+  margin-bottom: 120px;
+  &::before {
+    content: "";
+    width: 487px;
+    height: 220px;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    background-image: url(../img/portfolio-page/portfolio-right-leaf.svg),url(../img/portfolio-page/portfolio-dots-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 244px 217px, 75px 53px;
+    background-position: bottom right, bottom 13px left;
+  }
+  &::after {
+    content: "";
+    width: 285px;
+    height: 187px;
+    position: absolute;
+    bottom: -94px;
+    left: 5%;
+    background-image: url(../img/portfolio-page/portfolio-left-leaf.svg);
+    background-repeat: no-repeat;
+    background-size: 285px 187px;
+  }
+}
+.portfolio__title {
+  @include poppinsBold;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.portfolio-main {
+  margin-top: -105px;
+}
+.portfolio__buttons {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+  &-item:not(:last-of-type) {
+    margin-right: 18px;
+  }
+}
+
+.portfolio__list {
+  @include list-reset;
+}
+.grid-item,
+.grid-sizer {
+  width: 25%;
+}
+
+.portfolio__item {
+  margin: 12px 10px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.portfolio__item--big {
+  width: 370px;
+  height: 584px;
+  overflow: hidden;
+}
+.portfolio__item--small {
+  width: 370px;
+  height: 280px;
+  overflow: hidden;
+}
+.portfolio__picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hide-item {
+  display: none;
+}
+.sort-button {
+  background: none;
+  border: none;
+  color: $main-color;
+  padding: 2px;
+  font-size: 18px;
+  &:focus {
+    outline: 2px dashed $main-color;
+  }
+}
+.sort-button--active {
+  font-weight: bold;
+}
